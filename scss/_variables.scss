@@ -1,0 +1,81 @@
+$clr-beige: #E4CE8E;
+$clr-white: #ffffff;
+$clr-light: #E3E7B3;
+$clr-dark: #000;
+$clr-orgn:#D77948;
+$clr-border-200: #862f00;
+$clr-border-300: #a04514;
+
+
+/*MIXINS*/
+@mixin titulos {
+    color: $clr-orgn;
+    font-size: 2em;
+    text-align: center;
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+@mixin brandgallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: .5em;
+}
+
+@mixin tourscontainer {
+    max-width: 1200px;
+    background-color: $clr-dark;
+    color: $clr-white;
+    font-size: 1.3em;
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+@mixin toursgallery {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 5em;
+    padding-top: 2em;
+}
+
+/*EXTENDS*/
+.card__btn{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    letter-spacing: .1em;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:$clr-white
+}
+
+.brand__container{
+    max-width: 500px;
+    border-radius: 1.5em;
+    overflow: hidden;
+}
+
+.brandcard-btn{
+    padding-bottom: .3em;
+    padding-top: .3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em ;
+    display: flex;
+    align-items: center;
+    border-radius: .3em;
+    font-weight: 650;
+}
+
+.input__brands{
+    display: flex;
+    font-size: 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-weight: 550;
+    flex-flow: column;
+    gap: 2em;
+}

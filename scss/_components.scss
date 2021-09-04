@@ -1,0 +1,320 @@
+
+/*FORMULARIO PAGINA PRINCIPAL*/
+    input,
+    select,
+    option,
+    textarea{
+        background-color: $clr-white;
+        color: $clr-dark;
+        border-radius: .3em;
+        border: 1px solid $clr-border-200;
+        min-height: 20px;
+    }
+
+textarea{
+    min-height: 100px;
+    }
+
+.container{
+    padding: .6em;
+
+    &__title{
+    @include titulos
+    }
+
+    &__form{
+        display: flex;
+        flex-flow: column;
+    
+        & label{
+            padding-bottom: .4em;
+            padding-top: .3em;
+            font-weight: bold;
+        }
+    
+        & input, select, textarea{
+            margin-bottom: .4em;
+        }
+    
+        & .checkbox{
+            display: flex;
+            justify-content: baseline;
+            gap: .6em;
+        }
+    
+        & .btn{
+            border-radius: .3em;
+            text-align: center;
+            letter-spacing: .1em;
+            outline: none;
+            border: none;
+            
+            &__pri{
+                @extend .btn;
+                padding-top: .6em;
+                padding-bottom: .6em;
+                font-weight: 600;
+                text-transform: uppercase;
+                background-color: $clr-border-300;
+                color: $clr-white;
+                &:hover{
+                    transition: all .1s;
+                    background-color: $clr-border-200;
+                }
+            }
+    
+            /*&__pri{
+                padding-top: .6em;
+                padding-bottom: .6em;
+                font-weight: 600;
+                text-transform: uppercase;
+                background-color: $clr-border-300;
+                color: $clr-white
+            }*/
+        }
+    }
+
+    @media only screen and (min-width: 1300px){
+        .container__form{
+            min-width: 400px;
+        }
+    }
+
+
+/*VIDEO PAGINA PRINCIPAL*/
+
+    &__video{
+
+        .container__videotitle{
+            @include titulos
+            /*&--modifier{
+                padding-bottom: .8em;
+                padding-top: .8em;
+                text-decoration: underline;
+                text-underline-offset: .1em;
+            }*/
+        }
+
+        .container__iframe{
+            min-height: 200px;
+            max-width: 300px;
+
+            .iframe{
+                min-height: 200px;
+            }
+        }
+
+        @media only screen and (min-width:850px){
+            .container__iframe{
+                min-height: 300px;
+                max-width: 400px;
+                .iframe{
+                    min-height: 300px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+/*CONTENIDO PAGINA MUSIC*/
+/*CARDS SPOTIFY*/
+
+main{
+    .container__titlecards{
+        @include titulos
+    }
+    .container__cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 2em;
+        padding: 2em;
+        .card{
+            max-width: 300px;
+            overflow: hidden;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            &__spotify{
+                min-height: 300px;
+                .iframe-s{
+                    height: 300px;
+                }
+            }
+            &__btn-red{
+                @extend .card__btn;
+                background-color: rgb(129, 0, 0);
+                &:hover{
+                    background-color: rgb(143, 40, 40);
+                    transition: all .1s;
+                }
+            }
+            &__btn-brown{
+                @extend .card__btn;
+                background-color: $clr-border-200;
+                &:hover{
+                    background-color: $clr-border-300;
+                    transition: all .1s;
+                }
+            }
+            &__btn-gray{
+                @extend .card__btn;
+                background-color: rgb(99, 96, 96);
+                &:hover{
+                    background-color: $clr-dark;
+                    transition: all .1s;
+                }
+            }
+            &__btn-purple{
+                @extend .card__btn;
+                background-color: purple;
+                &:hover{
+                    background-color: rgb(170, 92, 170);
+                    transition: all .1s;
+                }
+            }
+            &__btn-black{
+                @extend .card__btn;
+                background-color: black;
+                &:hover{
+                    background-color: rgb(99, 96, 96);
+                    transition: all .1s;
+                }
+            }
+            &__btn-blue{
+                @extend .card__btn;
+                background-color: rgb(114, 193, 219);
+                &:hover{
+                    background-color: rgb(0, 85, 241);
+                    transition: all .1s;
+                }
+            }
+        }
+    }
+}
+
+/*CARDS BRANDS*/
+.brands__title{
+    @include titulos
+}
+.brands{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5em;
+    justify-content: flex-start;
+
+    /*FENTY BEAUTY CARD*/
+    &__containerbeauty{
+        @extend .brand__container;
+        background-color: $clr-dark;
+        .brands__img{
+            display: block;
+            min-height: 300px;
+            & img{
+                object-fit: cover;
+            }
+        }
+        input[type=checkbox]:checked ~ .brands__text{
+            @extend .input__brands;
+            color: $clr-white;
+            .brand__gallery{
+                @include brandgallery
+            }
+            .brand__btn{
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                &-shop{
+                    @extend .brandcard-btn;
+                    background-color:$clr-orgn;
+                    color: $clr-dark;
+                    &:hover{
+                        background-color: $clr-border-200;
+                        transition: all .1s;
+                        color: $clr-white;
+                    }
+                }
+            }
+        }
+        .brands__text{
+            display: none;
+        }
+    }
+
+    /*FENTY SKIN CARD*/
+    &__containerskin{
+        @extend .brand__container;
+        background-color: rgb(178, 175, 195);
+        .skin__img{
+            display: block;
+            min-height: 300px;
+            & img{
+                object-fit: cover;
+            }
+        }
+        input[type=checkbox]:checked ~ .skin__text{
+            @extend .input__brands;
+            color: $clr-white;
+            .skin__gallery{
+                @include brandgallery
+            }
+            .skin__btn{
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                &-shop{
+                    @extend .brandcard-btn;
+                    background-color: rgb(122, 110, 190);
+                    &:hover{
+                        background-color: rgb(159, 144, 243);
+                        transition: all .1s;
+                        color: $clr-dark;
+                    }
+                }
+            }
+        }
+        .skin__text{
+            display: none;
+        }
+    }
+
+    &__containersvg{
+        @extend .brand__container;
+        background-color: $clr-white;
+        .svg__img{
+            display: block;
+            min-height: 300px;
+            & img{
+                object-fit: cover;
+            }
+        }
+        input[type=checkbox]:checked ~ .svg__text{
+            @extend .input__brands;
+            color: $clr-dark;
+            font-weight: 650;
+            .svg__gallery{
+                @include brandgallery
+            }
+            .svg__btn{
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                &-shop{
+                    @extend .brandcard-btn;
+                    background-color: $clr-dark;
+                    color: $clr-white;
+                    &:hover{
+                        background-color: rgb(88, 87, 92);
+                        transition: all .1s;
+                    }
+                }
+            }
+        }
+
+        .svg__text{
+            display: none;
+        }
+    }
+}
+
+

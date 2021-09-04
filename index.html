@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rihanna es la artista digital más vendida de todos los tiempos y una auténtica mujer de negocios con múltiples proyectos empresariales">
+    <meta name="keywords" content="Rihanna, Fanpage, Singer, Artist, Businesswoman">
+    <title>Rihanna</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <a href="./index.html" class="header__logo">Rihanna</a>
+
+        <nav class="menu">
+            <label for="menu__dropdown" class="menu__sm"> <!--MENU CHIQUITO-->
+                <span class="iconify" data-icon="whh:menu" data-inline="false"></span>
+            </label>
+            <input type="checkbox" id= "menu__dropdown" hidden>
+            <ul class="menu__md">
+                <li><a href="./index.html" class="menu__link menu__link-active">HOME</a></li>
+                <li><a href="./pages/music.html" class="menu__link">MUSIC</a></li>
+                <li><a href="./pages/tours.html" class="menu__link">TOURS</a></li>
+                <li><a href="./pages/galery.html" class="menu__link">GALLERY</a></li>
+                <li><a href="./pages/extras.html" class="menu__link">EXTRAS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <div class="main">
+            <div class="main__img" id="bio-RF">
+                <img src="./media/index-bio-RF.jpg" alt="imagen de Rihanna">
+            </div>
+            <div class="main__text">
+                <p>
+                    En los 10 años transcurridos desde el inicio de su carrera musical, se ha convertido en la artista solista más joven en obtener 14 puntos. 1 en el Billboard Hot 100, la más rápida en hacerlo, vendió más de 54 millones de álbumes y 210 millones de pistas en todo el mundo.
+
+                    Rihanna es la “artista digital más vendida de todos los tiempos, con más de 100 millones de certificaciones de canciones de oro y platino” y ocho veces ganadora del Grammy, que también cuenta con 14 premios Billboard de música entre otros innumerables reconocimientos musicales.
+                
+                    Aparte de sus logros musicales, Rihanna es una auténtica mujer de negocios con múltiples proyectos empresariales. Sin embargo, lo más importante es que su innegable influencia cultural la ha dejado impresa para siempre en la historia como un icono mundial a pesar de su corta edad.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="container__newsletter">
+                <h2 class="container__title">Comments</h2>
+                <form action="" class="container__form">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="place">¿De dónde sos?</label>
+                    <select name="place" id="place" required>
+                        <option value="na" disabled selected>Elige una opción</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Uruguay">Uruguay</option>
+                    </select>
+
+                    <label for="comment">¿Que te gustaría que mejoremos?</label>
+                    <textarea name="comment" id="comment" required></textarea>
+
+                    <label for="newsletter" class="checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="1"> 
+                        Quiero suscribirme al newsletter
+                    </label>
+            
+                    <label for="conditions" class="checkbox">
+                        <input id="conditions" type="checkbox" value="1"> Acepto términos y condiciones
+                    </label>
+
+                    <a class="btn__pri" href="./404.html">Enviar</a>
+                </form>
+            </div>
+
+            <div class="container__video">
+                <h2 class="container__videotitle container__title--modifier">Watch</h2>
+                <div class="container__iframe">
+                    <iframe class="iframe" src="https://www.youtube.com/embed/KejMpUAqCwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer__info">
+            <a href="#" class="footer__logo">Rihanna</a>
+            <div class="footer__menu">
+                <h3>MAP</h3>
+                <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">TOURS</a></li>
+                <li><a href="#">GALERY</a></li>
+                <li><a href="#">BRANDS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__socialmedia">
+            <h3>Todos los derechos reservados</h3>
+            <div class="footer__icons">
+            <a href="#">
+                <span class="iconify footer__icons--md" data-icon="brandico:facebook" data-inline="false"></span>
+            </a>
+            <a href="#">
+                <span class="iconify footer__icons--md" data-icon="akar-icons:instagram-fill" data-inline="false"></span>
+            </a>
+            <a href="#">
+                <span class="iconify footer__icons--md" data-icon="ant-design:youtube-outlined" data-inline="false"></span>
+            </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>
