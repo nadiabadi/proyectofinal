@@ -408,10 +408,12 @@ footer{
                     border-radius: 20px;
                     overflow: hidden;
                     max-height: 400px;
+                    max-width: 300px;
                 }
             }
         }
     }
+
 
     &__diamonds{
         @include tourscontainer;
@@ -430,6 +432,7 @@ footer{
                     border-radius: 20px;
                     overflow: hidden;
                     max-height: 400px;
+                    max-width: 300px;
                 }
             }
         }
@@ -452,6 +455,7 @@ footer{
                     border-radius: 20px;
                     overflow: hidden;
                     max-height: 400px;
+                    max-width: 300px;
                 }
             }
         }

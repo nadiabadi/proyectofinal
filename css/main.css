@@ -330,13 +330,15 @@ footer {
       font-weight: 600; }
       .tours__anti .anti__text .anti__gallery {
         display: grid;
-        grid-template-columns: repeat(3, 300px);
-        gap: 5em;
-        padding-top: 2em; }
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        padding-top: 2em;
+        justify-items: center; }
         .tours__anti .anti__text .anti__gallery-img {
           border-radius: 20px;
           overflow: hidden;
-          max-height: 400px; }
+          max-height: 400px;
+          max-width: 300px; }
   .tours__diamonds {
     max-width: 1200px;
     background-color: #000;
@@ -352,13 +354,15 @@ footer {
       font-weight: 600; }
       .tours__diamonds .diamonds__text .diamonds__gallery {
         display: grid;
-        grid-template-columns: repeat(3, 300px);
-        gap: 5em;
-        padding-top: 2em; }
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        padding-top: 2em;
+        justify-items: center; }
         .tours__diamonds .diamonds__text .diamonds__gallery-img {
           border-radius: 20px;
           overflow: hidden;
-          max-height: 400px; }
+          max-height: 400px;
+          max-width: 300px; }
   .tours__loud {
     max-width: 1200px;
     background-color: #000;
@@ -374,13 +378,15 @@ footer {
       font-weight: 600; }
       .tours__loud .loud__text .loud__gallery {
         display: grid;
-        grid-template-columns: repeat(3, 300px);
-        gap: 5em;
-        padding-top: 2em; }
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        padding-top: 2em;
+        justify-items: center; }
         .tours__loud .loud__text .loud__gallery-img {
           border-radius: 20px;
           overflow: hidden;
-          max-height: 400px; }
+          max-height: 400px;
+          max-width: 300px; }
 
 /*FORMULARIO PAGINA PRINCIPAL*/
 input,

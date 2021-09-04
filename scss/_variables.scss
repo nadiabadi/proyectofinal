@@ -34,9 +34,10 @@ $clr-border-300: #a04514;
 
 @mixin toursgallery {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    gap: 5em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
     padding-top: 2em;
+    justify-items: center;
 }
 
 /*EXTENDS*/
