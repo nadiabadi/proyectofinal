@@ -60,7 +60,7 @@ header,
 footer {
   padding: 1em 5%; }
 
-/*HEADER Y NAV*/
+/*HEADER*/
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -68,7 +68,8 @@ header {
   align-items: baseline;
   background-color: #ffffff;
   color: #000;
-  position: relative; }
+  position: relative;
+  /*NAV*/ }
   header .header__logo {
     font-weight: 600;
     font-size: 3em;
@@ -83,7 +84,7 @@ header {
     display: flex;
     flex-flow: column;
     align-items: center;
-    gap: 3em;
+    gap: 2.5em;
     background: #ffffff;
     padding: 2em;
     border-bottom-left-radius: 0.5em;
@@ -454,15 +455,7 @@ textarea {
       text-align: center;
       letter-spacing: .1em;
       outline: none;
-      border: none;
-      /*&__pri{
-                padding-top: .6em;
-                padding-bottom: .6em;
-                font-weight: 600;
-                text-transform: uppercase;
-                background-color: $clr-border-300;
-                color: $clr-white
-            }*/ }
+      border: none; }
       .container__form .btn__pri {
         padding-top: .6em;
         padding-bottom: .6em;
@@ -556,6 +549,7 @@ main .container__cards {
         background-color: #0055f1;
         transition: all .1s; }
 
+/*PAGINA EXTRAS*/
 /*CARDS BRANDS*/
 .brands__title {
   color: #D77948;
