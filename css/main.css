@@ -312,6 +312,13 @@ footer {
         background-color: #dd093e; }
 
 /*TOURS*/
+.tours__title {
+  color: #D77948;
+  font-size: 2em;
+  text-align: center;
+  padding-top: .3em;
+  padding-bottom: .3em; }
+
 .tours {
   display: grid;
   grid-template-rows: repeat(3, 1fr);

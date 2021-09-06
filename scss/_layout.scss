@@ -387,6 +387,9 @@ footer{
 }
 
 /*TOURS*/
+.tours__title{
+    @include titulos
+}
 
 .tours{
     display: grid;
